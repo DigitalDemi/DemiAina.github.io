@@ -1,19 +1,19 @@
    name: Deploy to Astro to GitHub Pages
 
-    on:
+   on:
      # Trigger the workflow every time you push to the `main` branch
       push:
-        branches: [ Dev ]
+        branches: [ main ]
       # Allows you to run this workflow manually from the Actions tab on GitHub.
       workflow_dispatch:
 
       # Allow this job to clone the repo and create a page deployment
-    permissions:
+   permissions:
       contents: read
       pages: write
       id-token: write
 
-    jobs:
+   jobs:
       build:
         runs-on: ubuntu-latest
         steps:
