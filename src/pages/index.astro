@@ -1,13 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Mainfunction from '../components/Mainfunction.jsx';
 ---
 
 <Layout title="Demi Website">
-	<main>
-		<h1>Welcome to my website </h1>
-        <p> Content will be added soon </p>
-</main>
+	<main class = "h-50">
+	<Mainfunction client:load />
+	<p class = "text-center" >Content will be added soon</p>
+	<!-- <main>
+        <Card href="" title="Socials" body=" This is link to my Socials" />
+        <Card href="" title="Blog" body=" This is link to all of the programming concepts I have learned" />
+        <Card href="" title="University" body="What I have done in eahc year  of unversity and what I have leaned" />
+        <Card href="" title="Editing" body="This is my editing page" />
+        <Card href="" title="Payhip" body="Link to my Payhip store"  />
+    </main> -->
+    <!-- TODO: Fix the styles tmrw -->
+	</main>
 </Layout>
 
 <style>
