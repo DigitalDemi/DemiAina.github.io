@@ -1,0 +1,25 @@
+---
+import { Image } from "@astrojs/image/components";
+import Theme from './Theme'
+---
+
+<nav class = "hidden md:flex justify-between items-center mb-8"> 
+    <div class="ml-12">
+    <a href="/">
+            
+            <!-- <Image
+                src={`favicon.svg`}
+                width={120}
+                height={120}
+                alt="Main"
+        /> -->
+        
+    </a>
+    </div>
+    <div class ="flex gap-3 mr-12 my-20">
+        <h2>Demi Aina</h2>
+       <h1> <span> > </span></h1>
+    <a href="https://github.com/DemiAina">Github</a>
+    <Theme client:load/>
+    </div>
+</nav>
