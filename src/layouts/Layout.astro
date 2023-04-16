@@ -18,13 +18,24 @@ import Header from '../components/Header.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class ="[&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] text-black dark:bg-black dark:text-white">
 		<Header></Header>
 		<slot />
 		<Footer></Footer>
 	</body>
 </html>
 <style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		box-sizing: border-box;
+	}
+	body{
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
 	:root {
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
