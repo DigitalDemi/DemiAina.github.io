@@ -13,6 +13,7 @@ function Box(props) {
             onClick={(event) => setActive(!active)}
             onPointerOver={(event) => setHover(true)}
             onPointerOut={(event) => setHover(false)}
+            
         >
 
             <boxGeometry args={[1, 1, 1]} />
@@ -28,6 +29,7 @@ export const Scene = () => {
             <pointLight position={[10, 10, 10]} castShadow/>
             <Box position={[-1.2, 0, 0]} />
             <Box position={[1.2, 0, 0]} />
+            
         </>
     )
 }
