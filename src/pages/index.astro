@@ -2,19 +2,63 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Mainfunction from '../components/Mainfunction.jsx';
+import {Image} from '@astrojs/image/components';
 ---
 
 <Layout title="Demi Website">
 	
-	<Mainfunction client:load />
-		<main class="absolute grid grid-cols-1 top-0 left-0 bottom-0 right-0 mr-auto h-[80vh]">
-        <Card href="" title="Socials" body=" This is link to my Socials" />
-        <Card href="" title="Blog" body=" This is link to all of the programming concepts I have learned" />
-        <Card href="" title="University" body="What I have done in eahc year  of unversity and what I have leaned" />
-        <Card href="" title="Editing" body="This is my editing page" />
-        <Card href="" title="Payhip" body="Link to my Payhip store"  />
-		<p class = "text-center" >Content will be added soon</p>
-    <!-- TODO: Fix the styles tmrw -->
+		<Mainfunction client:load />
+		<main class="">
+			
+
+		
+		<ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
+			<li class=" flex-1 ">
+				<a href="">
+					<h2>
+						Socials
+					</h2>
+					<p>This is link to my Socials</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>
+						Blog
+					</h2>
+					<p>This is link to all of the programming concepts I have learned</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<h2>
+						University
+					</h2>
+					
+					<p>What I have done in eahc year  of unversity and what I have leaned</p>
+				</a>
+			</li>
+			<li class = "flex-1">
+				<a href="">
+					<h2>
+						Editing
+					</h2>
+					
+					<p>This is my editing page</p>
+				</a>
+			</li>
+			<li class="flex-1">
+				<a href="">
+					<h2>
+						Payhip
+					</h2>
+					
+					<p>Link to my Payhip store</p>
+				</a>
+			</li>
+			
+		</ul>
+		<p class = "text-center my-5" >Content will be added soon</p>
 	</main>
 </Layout>
 
@@ -23,13 +67,27 @@ import Mainfunction from '../components/Mainfunction.jsx';
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
-		grid-template: repeat(12, 1fr);
 	}
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
 	}
+	/* li p {
+		color: #FBE094;
+	} */
+	li h2 {
+		color: #FBE094;
+	}
+	li {
+		list-style-type: none;
+		border: 2px solid rgba(var(--accent), 25%);
+		border-radius: 2rem;
+		margin: 2rem;
+		padding: 1rem;
+
+	}
+
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;

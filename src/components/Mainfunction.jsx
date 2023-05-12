@@ -2,7 +2,7 @@ import { FiberContainer } from "./FiberContainer.jsx";
 
 function App(){
     return (
-    <div className="app w-[100vw] h-[80vh]">
+    <div className="h-[10vh] w-[100vw]">
         
         <FiberContainer />
     </div>
