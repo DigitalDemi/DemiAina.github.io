@@ -7,26 +7,23 @@ import {Image} from '@astrojs/image/components';
 
 <Layout title="Demi Website">
 	
-		<Mainfunction client:load />
+		<!-- <Mainfunction client:load /> -->
 		<main class="">
-			
-
-		
 		<ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
 			<li class=" flex-1 ">
 				<a href="">
 					<h2>
 						Socials
 					</h2>
-					<p>This is link to my Socials</p>
+					<p>Socials</p>
 				</a>
 			</li>
-			<li>
+			<li class ="flex-grow" >
 				<a href="">
 					<h2>
 						Blog
 					</h2>
-					<p>This is link to all of the programming concepts I have learned</p>
+					<p>Programming concepts explained</p>
 				</a>
 			</li>
 			<li>
@@ -35,7 +32,7 @@ import {Image} from '@astrojs/image/components';
 						University
 					</h2>
 					
-					<p>What I have done in eahc year  of unversity and what I have leaned</p>
+					<p>Modules and what I learned</p>
 				</a>
 			</li>
 			<li class = "flex-1">
@@ -44,81 +41,18 @@ import {Image} from '@astrojs/image/components';
 						Editing
 					</h2>
 					
-					<p>This is my editing page</p>
+					<p> Page </p>
 				</a>
 			</li>
 			<li class="flex-1">
-				<a href="">
+				<a href="https://payhip.com/6Demii6">
 					<h2>
 						Payhip
 					</h2>
-					
-					<p>Link to my Payhip store</p>
+					<p>Payhip store</p>
 				</a>
 			</li>
 			
 		</ul>
-		<p class = "text-center my-5" >Content will be added soon</p>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	/* li p {
-		color: #FBE094;
-	} */
-	li h2 {
-		color: #FBE094;
-	}
-	li {
-		list-style-type: none;
-		border: 2px solid rgba(var(--accent), 25%);
-		border-radius: 2rem;
-		margin: 2rem;
-		padding: 1rem;
-
-	}
-
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-	
-</style>
