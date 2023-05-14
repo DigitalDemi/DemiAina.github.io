@@ -10,8 +10,8 @@ import {Image} from '@astrojs/image/components';
 		<!-- <Mainfunction client:load /> -->
 		<main class="">
 		<ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
-			<li class=" flex-1 ">
-				<a href="">
+			<li class="flex-1">
+				<a href={'./Socials'}>
 					<h2>
 						Socials
 					</h2>
@@ -19,7 +19,7 @@ import {Image} from '@astrojs/image/components';
 				</a>
 			</li>
 			<li class ="flex-grow" >
-				<a href="">
+				<a href={`./blog`}>
 					<h2>
 						Blog
 					</h2>
@@ -27,20 +27,18 @@ import {Image} from '@astrojs/image/components';
 				</a>
 			</li>
 			<li>
-				<a href="">
+				<a href={'./university'}>
 					<h2>
 						University
 					</h2>
-					
 					<p>Modules and what I learned</p>
 				</a>
 			</li>
 			<li class = "flex-1">
-				<a href="">
+				<a href={`/editing`}>
 					<h2>
 						Editing
 					</h2>
-					
 					<p> Page </p>
 				</a>
 			</li>
@@ -52,7 +50,6 @@ import {Image} from '@astrojs/image/components';
 					<p>Payhip store</p>
 				</a>
 			</li>
-			
 		</ul>
 	</main>
 </Layout>
