@@ -1,55 +1,44 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Mainfunction from '../components/Mainfunction.jsx';
-import {Image} from '@astrojs/image/components';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Mainfunction from "../components/Mainfunction.jsx";
+import { Image } from "@astrojs/image/components";
 ---
 
 <Layout title="Demi Website">
-	
-		<!-- <Mainfunction client:load /> -->
-		<main class="">
-		<ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
-			<li class="flex-1">
-				<a href={'./Socials'}>
-					<h2>
-						Socials
-					</h2>
-					<p>Socials</p>
-				</a>
-			</li>
-			<li class ="flex-grow" >
-				<a href={`./blog`}>
-					<h2>
-						Blog
-					</h2>
-					<p>Programming concepts explained</p>
-				</a>
-			</li>
-			<li>
-				<a href={'./university'}>
-					<h2>
-						University
-					</h2>
-					<p>Modules and what I learned</p>
-				</a>
-			</li>
-			<li class = "flex-1">
-				<a href={`/editing`}>
-					<h2>
-						Editing
-					</h2>
-					<p> Page </p>
-				</a>
-			</li>
-			<li class="flex-1">
-				<a href="https://payhip.com/6Demii6">
-					<h2>
-						Payhip
-					</h2>
-					<p>Payhip store</p>
-				</a>
-			</li>
-		</ul>
-	</main>
+  <!-- <Mainfunction client:load /> -->
+  <main class="">
+    <ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
+      <li class="flex-1">
+        <a href={"./Socials"}>
+          <h2>Socials</h2>
+          <p>Socials</p>
+        </a>
+      </li>
+      <li class="flex-grow">
+        <a href={`./blog`}>
+          <h2>Blog</h2>
+          <p>Programming concepts explained</p>
+        </a>
+      </li>
+      <li>
+        <a href={"./university"}>
+          <h2>University</h2>
+          <p>Modules and what I learned</p>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href={`/editing`}>
+          <h2>Editing</h2>
+          <p>Page</p>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="https://payhip.com/6Demii6">
+          <h2>Payhip</h2>
+          <p>Payhip store</p>
+        </a>
+      </li>
+    </ul>
+  </main>
 </Layout>
