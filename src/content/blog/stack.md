@@ -4,17 +4,17 @@ title: Stack
 author: Demi Aina
 date: 2023-03-03
 image : {
-    src : "/favicon.svg",
+    src : "/stack.png",
     alt : Hello world,
 
 }
 description: This a blog talking about how stacks are made and how to code one
 draft : true
-tags : 
-- Data Sturcture
+tags :
+- Data Structure
 - Algorithms
 - C
-Categories : 
+Categories :
 - Programming
 
 ---
@@ -49,7 +49,7 @@ Categories :
     </style>
 
 # Introduction
-A stack is a unique data structure that using define a set of rules to hold data. This rule is called the last in first out. This means what ever data has been put into this data structure will follow in principle. This means when the data is added on to the stack, the last data item is the last one to come in, however the first one to come out.<br>
+A stack is a unique data structure that using define a set of rules to hold data. This rule is called the last in first out. This means whatever data has been put into this data structure will follow in principle. This means when the data is added to the stack, the last data item is the last one to come in, however, the first one to come out.<br>
 
 P. S Some links are broken as I have not made articles for those yet.
 
@@ -57,21 +57,21 @@ P. S Some links are broken as I have not made articles for those yet.
 To visualize this, you can use a stack of plates, if you follow this principle the plate at the top is the first one to get removed from the stack. When a new plate needs to be added, it will be added at the top of the stack.
 
 ## Code
-When you consider this way, coding the stack should be relatively easy to code.  However, depending on on the language, you may need to use with pointers. 
+When you consider this way, coding the stack should be relatively easy to code.  However, depending on the language, you may need to use pointers.
 
-I will show you how to code it in 3 different languages C, Java (Using it this semester), JavaScript because it has some built in parameters and Python because everyone uses python
+I will show you how to code it in 3 different languages C, Java (Using it this semester), JavaScript because it has some built-in parameters and Python because everyone uses python
 
 ### Requirements
 The stack can be coded in two different ways *arrays* and *linked list*, arrays are fixed in size and linked lists allow for the limitation to be the amount of memory the computer has.
 
-Linked lists can sometimes be more efficient, as generally it only uses the amount of memory that needed at the moment in time. While arrays once you have declared the size of the array that is the size you can fill it up to size .  If you require more space, you need to find a new fixed size of memory and copy all the items you have in that array into the new array. 
+Linked lists can sometimes be more efficient, as generally it only uses the amount of memory that is needed at the moment in time. While arrays once you have declared the size of the array that is the size you can fill it up to size.  If you require more space, you need to find a new fixed size of memory and copy all the items you have in that array into the new array.
 
-Ok so the main conventions used for the stack is push and pop.
+Ok, so the main conventions used for the stack are push and pop.
 
 Push, adds an item onto the stack.
-Pop, removes the data at the top of the stack.
+Pop removes the data at the top of the stack.
 
-This means data should not be taken at the end or the middle.
+This means data should not be taken at the end of the middle.
 
 C – Linked List
 
@@ -94,7 +94,7 @@ For this we are going to need to use *double pointer* to reference the head poin
 Node *head = null;
 ```
 
-After this, we now need to consider the the methods which are going to print(), push() pop()
+After this, we now need to consider the methods which are going to print(), push() pop()
 
 ```c
 Void print(*head);
@@ -102,7 +102,7 @@ void push(int, *head);
 int pop();
 ```
 
-Theses are the functions parameters.
+These are the function parameters.
 
 # Printing
 A guard is needed, this is because in C sometimes accessing Null can make your program crash, and it is generally good practice to check anyway.
@@ -111,26 +111,26 @@ A guard is needed, this is because in C sometimes accessing Null can make your p
 void print(Node* *head){
 
 if(*head == null){
-	printf("Stack is empty");
-	return;
-} 
+        printf("Stack is empty");
+        return;
+}
 Node *current = **head
 while(current != null){
-	printf("%d -> ");
-	current = current -> current.next;
+        printf("%d -> ");
+        current = current -> current.next;
 }
 printf("end");
 }
 ```
-Guards if are design choice by me that allow me to stop using else is some circumstances.
+Guards are a design choice by me that allows me to stop using else in some circumstances.
 
-While loop will print all the values in the stack by one by one
+While the loop will print all the values in the stack one by one
 
 ### Pushing an item onto the stack
 
-To push an item onto the stack, we require to take in the item that and put it to the head. However, because we need to ensure the list doesn't get lost, we have to make sure we move around the pointer properly or else our program will crash.
+To push an item onto the stack, we require to take in the item and put it to the head. However, because we need to ensure the list doesn't get lost, we have to make sure we move around the pointer properly or else our program will crash.
 
-This is how you create a new node using malloc.
+This is how you create a new node using Malloc.
 
 ```c
    Node *current = malloc(sizeof(Node));
@@ -138,7 +138,7 @@ This is how you create a new node using malloc.
 
 To do this, we need to check for 2 conditions check of the top of the stack.
 
-We need to check if there are items in the stack, if there isn't that when add it to top of the stack. 
+We need to check if there are items in the stack, if there aren't any then add it to the top of the stack.
 
 Then all we do is take the newly created node, put the user data into the data section and make the next pointer that points to the next node Null because it is the start of the list.
 
@@ -153,7 +153,7 @@ if (head == NULL)
 ```
 
 
-The second condition, we check if the memory has been allocated for the new node we want to add we then put the user data into the data section and make the current node at the top of the stack and put into the new node next pointer section and then make the new node the new top of the stack.
+In the second condition, we check if the memory has been allocated for the new node we want to add we then put the user data into the data section and make the current node at the top of the stack and put it into the new node next pointer section and then make the new node the new top of the stack.
 
 ```c
  else if (current != NULL)
@@ -163,7 +163,7 @@ The second condition, we check if the memory has been allocated for the new node
         *head = current;
         print(head);
     }
-    
+
 ```
 And for the last condition, we need to check if the memory was created for the current node. If the memory was not created, then it will prompt the user that it has not been created.
 
@@ -177,9 +177,9 @@ And for the last condition, we need to check if the memory was created for the c
 
 ### Removing an item from the stack
 
-Some content is needed for pop function, this is because some error handling has been handled in the user option part. It auto check if the head is set to null. The reason I have done it this way is to return the popped value, so the user can see. 
+Some content is needed for the pop function, this is because some error handling has been handled in the user option part. It auto-checks if the head is set to null. The reason I have done it this way is to return the popped value, so the user can see it.
 
-So will show that code first 
+So will show that code first
 
 #### User option
 ```c
@@ -212,8 +212,8 @@ int pop(Node **head)
     return value;
 }
 ```
-We have a variable called value in this function, this is going to return the number that has been popped to the user. As you can see we are return the node head data. To set the head as the node next to it, we set head to be heads next value (we used current here).
-The reason we use current here is that we need to free the memory of this node, calling the node temp would probably be a better idea here it is modified.
+We have a variable called value in this function, this is going to return the number that has been popped to the user. As you can see we are returning the node head data. To set the head as the node next to it, we set the head to be the head's next value (we used current here).
+The reason we use current here is that we need to free the memory of this node, calling the node temp would probably be a better idea here if it is modified.
 
 
 ```c
@@ -227,7 +227,7 @@ int pop(Node **head)
     return value;
 }
 ```
-If we don't free the memory of the node, it will cause a program leak and take system memory up a the longer the program is running
+If we don't free the memory of the node, it will cause a program leak and take system memory up the longer the program is running
 
 I used a switch statement to run the commands and users could choose the option.
 
@@ -267,14 +267,9 @@ I used a switch statement to run the commands and users could choose the option.
 }
 ```
 
-While 1 cause the menu to constantly display and the case run each function.
+While 1 causes the menu to constantly display and the case runs each function.
 
 
 Thank you for reading, I hope it blog helped to understand how linked list work and how to code them.
 
-This github link has the data stuturces and algothm that I will update as I make articles, you can follow it if you want
-
-Soruces: 
-
-
-
+This GitHub link has the data structures and algorithms that I will update as I make articles, you can follow it if you want
