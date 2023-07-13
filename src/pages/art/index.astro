@@ -1,0 +1,45 @@
+
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Mainfunction from "../components/Mainfunction.jsx";
+import { Image } from "@astrojs/image/components";
+---
+
+<Layout title="Demi Website">
+  <!-- <Mainfunction client:load /> -->
+  <main class="">
+    <ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
+      <li class="flex-1">
+        <a href={"./art/Socials"}>
+          <h2>Socials</h2>
+          <p>Socials</p>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href={`./art/editing`}>
+          <h2>Editing</h2>
+          <p>Page</p>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href={`./art/editing`}>
+          <h2>Perosnal Blog</h2>
+          <p>Everything I like</p>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href={`./art/editing`}>
+          <h2>Editing Blog</h2>
+          <p>Blog about editing</p>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="https://payhip.com/6Demii6">
+          <h2>Payhip</h2>
+          <p>Payhip store</p>
+        </a>
+      </li>
+    </ul>
+  </main>
+</Layout>
