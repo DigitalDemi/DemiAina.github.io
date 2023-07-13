@@ -1,0 +1,22 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+---
+
+<Layout title="University courses">
+   <main class="">
+    <ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
+      <li class="flex-1">
+        <a href={"/dev/university/Year1"}>
+          <h2>Year 1</h2>
+          <p>All the subjects I took in year 1 and what I learned from each</p>
+        </a>
+      </li>
+      <li class="flex-grow">
+        <a href={`/dev/university/Year2`}>
+          <h2>Year 2</h2>
+          <p>All the subjects I took in year 2 and what I learned from each</p>
+        </a>
+      </li>
+      </ul>
+  </main>
+</Layout>

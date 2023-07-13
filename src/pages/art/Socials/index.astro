@@ -1,0 +1,32 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { IoLogoInstagram, IoLogoYoutube, IoLogoTwitter , IoLogoSoundcloud } from "react-icons/io5/index.js";
+import {BsSpotify} from "react-icons/bs/index.js";
+---
+
+<Layout title="Socials">
+   <div class=" flex justify-center my-2 ">
+   <img class = "my-2 rounded-full" src="/ProfilePic.jpg" alt="">
+   </div>
+  <ul class="grid text-center gap-2 content-center my-12">
+    <li>
+      <a href="https://www.instagram.com/"> <IoLogoInstagram className="inline-flex mx-2" /> instagram</a>
+    </li>
+    <li>
+      <a href=""> <IoLogoYoutube className="inline-flex mx-2" /> Youtube</a>
+    </li>
+    <li>
+      <a href=""> <IoLogoTwitter className="inline-flex mx-2" /> Twitter</a>
+    </li>
+    <li>
+      <a href=""> <IoLogoSoundcloud className="inline-flex mx-2" /> soundcloud</a>
+    </li>
+    <li>
+      <a href=""> <img class = "inline-flex w-4 h-4 mx-2"  src="/Payhip.png" alt=""> Payhip</a>
+    </li>
+    <li>
+      <a href=""> <BsSpotify className= "inline-flex mx-2" />  Spotify</a>
+    </li>
+  </ul>
+
+</Layout>
