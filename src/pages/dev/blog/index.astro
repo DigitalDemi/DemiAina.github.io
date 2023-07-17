@@ -25,10 +25,10 @@ const allPosts = await getCollection("blog");
         }</p>
         <p class="my-4">tags :{
             post.data.tags.map((tag: unknown) => 
-            <a href = {`/tag/${tag}`} class = "mx-2">{tag}</a>
+            <a href = {`./tag/${tag}`} class = "mx-2">{tag}</a>
             )
         } </p>
-        <a href = {`/${post.slug}`}>
+        <a href = {`./${post.slug}`}>
         <Image class = "my-2 inline-grid"
         width={300}
         aspectRatio={2.0}
