@@ -34,7 +34,7 @@ export async function getStaticPaths() {
   <ul>
     {
       posts.map((post: { slug: any; data: { title: any; }; }) => (
-        <BlogPost url={`/blog/${post.slug}`} title={post.data.title} />
+        <BlogPost url={`/dev/blog/${post.slug}`} title={post.data.title} />
       ))
     }
   </ul>
