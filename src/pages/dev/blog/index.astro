@@ -20,15 +20,15 @@ const allPosts = await getCollection("blog");
         <h1 class = "my-2">{post.data.title}</h1>
         <p class = "my-4"> {
             post.data.Categories.map((category: unknown) =>
-            <a href = {`blog/category/${category}`} class = "mx-2">{category}</a>
+            <a href = {`category/${category}`} class = "mx-2">{category}</a>
             )
         }</p>
         <p class="my-4">tags :{
             post.data.tags.map((tag: unknown) => 
-            <a href = {`blog/tag/${tag}`} class = "mx-2">{tag}</a>
+            <a href = {`/tag/${tag}`} class = "mx-2">{tag}</a>
             )
         } </p>
-        <a href = {`blog/${post.slug}`}>
+        <a href = {`/${post.slug}`}>
         <Image class = "my-2 inline-grid"
         width={300}
         aspectRatio={2.0}
