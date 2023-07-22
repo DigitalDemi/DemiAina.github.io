@@ -41,7 +41,7 @@ ul li{
   flex: 1;
 }
 
-li {
+.weblinks li {
   list-style-type: none;
   border: 2px solid gray;
   border-radius: 1.5rem;
