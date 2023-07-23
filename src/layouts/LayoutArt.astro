@@ -1,0 +1,27 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import Footer from '../components/Footer.astro';
+import HeaderArt from '../components/HeaderArt.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/styles.css" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class ="[&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] bg-lightMode-background text-lightMode-text dark:bg-darkMode-black dark:text-darkMode-blue">
+		<HeaderArt></HeaderArt>
+		<slot />
+		<Footer></Footer>
+	</body>
+</html>
