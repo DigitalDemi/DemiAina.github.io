@@ -1,15 +1,15 @@
 
 ---
-import Layout from "../../layouts/Layout.astro";
+import LayoutArt from "../../layouts/LayoutArt.astro";
 import Card from "../components/Card.astro";
 import Mainfunction from "../components/Mainfunction.jsx";
 import { Image } from "@astrojs/image/components";
 ---
 
-<Layout title="Demi Website">
+<LayoutArt title="Demi Website">
   <!-- <Mainfunction client:load /> -->
   <main class="">
-    <ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2">
+    <ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2 weblinks">
       <li class="flex-1">
         <a href={"/art/Socials"}>
           <h2>Socials</h2>
@@ -42,4 +42,4 @@ import { Image } from "@astrojs/image/components";
       </li>
     </ul>
   </main>
-</Layout>
+</LayoutArt>
