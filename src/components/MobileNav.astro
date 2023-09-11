@@ -10,14 +10,11 @@ import { TfiGithub } from "react-icons/tfi/index.js";
 
 ---
 
-<nav class = "block fixed my-2 inset-x-0 bottom-0 z-10 justify-between items-center md:hidden"> 
-    <div class="ml-12">
-        <h2> <a href="/">Demi Aina</a></h2>
-    </div>
-    <div class ="flex gap-3 justify-center place-items-center">
-       <h1> <span> > </span></h1>
-    <a class="mx-4" href="https://github.com/DemiAina"> <TfiGithub /> </a>
-    <Theme client:load/>
+<nav class = "block fixed mt-12 inset-x-0 bottom-0 z-10 justify-between items-center md:hidden"> 
+    <div class ="flex gap-3 justify-center place-items-center mt-12 bg-lightMode-background dark:bg-darkMode-black">
+        <h2><a href="/">Demi Aina</a></h2>
+        <a class="mx-4" href="https://github.com/DemiAina"> <TfiGithub /> </a>
+        <Theme client:load/>
     </div>
 </nav>
 
