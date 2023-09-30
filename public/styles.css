@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font:inherit;
   box-sizing: border-box;
 }
 
@@ -14,7 +15,10 @@ img, picture, svg , video{
     max-width: 100%;
 }
 
-
 body{
     min-height: 100vh;
+}
+
+main{
+    min-height: 80vh;
 }

@@ -22,7 +22,9 @@ import MobileNav from '../components/MobileNav.astro';
 	</head>
 	<body class ="[&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] bg-lightMode-background text-lightMode-text dark:bg-darkMode-black dark:text-darkMode-blue">
 		<Header></Header>
-		<slot />
+        <main>
+            <slot />
+        </main>
         <MobileNav />
 		<Footer></Footer>
 	</body>
