@@ -22,3 +22,12 @@ body{
 main{
     min-height: 80vh;
 }
+
+.dev{
+    height: 75vh;
+    width: 25vw;
+}
+.art{
+    height: 75vh;
+    width: 25vw;
+}

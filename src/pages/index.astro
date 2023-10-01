@@ -1,19 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import Mainfunction from "../components/Mainfunction.jsx";
 import { Image } from "@astrojs/image/components";
 ---
 
 <Layout title="Demi Website">
     <ul class="grid text-center mt-4 mb-4 md:flex content-center flex-wrap align-middle gap-2 weblinks">
-      <article class="dev flex-1">
-        <section>
-            <h2>Artist</h2>
+      <article class="art flex-1">
+        <h2>Artist</h2>
+        <section class="card-contents">
             <p>Here is where you can see my works to do with 3D and editing</p>
-            <a href={"./art"}>
+            <button><a href={"./art"}>
                 click here to learn more
-            </a>
+            </a></button>
         </section>
       </article>
       <article class="dev flex-1">
@@ -27,10 +26,23 @@ import { Image } from "@astrojs/image/components";
       </article>
       </ul>
     <style>
-        .dev{
-            background-image: url("/DevImage.jpg");
+        .art{
+            background-image: url("ArtistCard.jpg");
             background-size: cover;
+        }
+        .dev{
+            background-image: url("DevImage.jpg");
+            background-size: cover;
+        }
+        .card-contents{
+            position: relative;
+            left: -100%;
+            overflow:hidden;
+        }
+        .art:hover .card-contents{
+            left: 0;
         }
     </style>
 </Layout>
 
+<!-- finish the animation later -->
