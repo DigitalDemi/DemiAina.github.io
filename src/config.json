@@ -4,14 +4,14 @@
     "title": "Gyoza",
     "description": "这是一个使用 Astro 和 React 开发的博客主题。",
     "keywords": "Gyoza,blog,Astro,theme,lxchapu,博客主题",
-    "lang": "zh-CN",
+    "lang": "en-GB",
     "favicon": "/favicon.ico",
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
     "name": "Demi",
     "twitterId": "@DigitalDemiD",
-    "avatar": "https://s2.loli.net/2024/04/30/ozsnuS5Ihf3xMBG.webp"
+    "avatar": "https://github.com/DigitalDemi/DemiAina.github.io/blob/dev/public/4b5022936cb6f16579dfd1e5fffb649b.jpg?raw=true"
   },
   "hero": {
     "name": "Demi",
@@ -55,22 +55,22 @@
   },
   "menus": [
     {
-      "name": "首页",
+      "name": "Home",
       "link": "/",
       "icon": "icon-pantone"
     },
     {
-      "name": "归档",
+      "name": "Archive",
       "link": "/archives",
       "icon": "icon-archive"
     },
     {
-      "name": "项目",
+      "name": "Project",
       "link": "/projects",
       "icon": "icon-flask"
     },
     {
-      "name": "关于",
+      "name": "About",
       "link": "/about",
       "icon": "icon-ghost"
     },

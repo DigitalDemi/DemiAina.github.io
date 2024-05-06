@@ -1,38 +1,43 @@
 import { padStart } from 'lodash-es'
 
 // 获取两个日期的相对时间
+// Get the relative time between two dates
 export function getRelativeTime(startDate: Date, endDate = new Date()) {
-  const diffSeconds = Math.floor((endDate.getTime() - startDate.getTime()) / 1000)
+  const diffSeconds = Math.floor((endDate.getTime() - startDate.getTime()) / 1000);
   if (diffSeconds < 0) {
-    return null
+    return null; // No negative differences
   }
-  const diffMinutes = Math.floor(diffSeconds / 60)
+  const diffMinutes = Math.floor(diffSeconds / 60);
   if (diffMinutes < 10) {
-    return '刚刚'
+    return 'just now'; // Recently
   }
   if (diffMinutes < 60) {
-    return `${diffMinutes} 分钟前`
+    return `${diffMinutes} minutes ago`; // Minutes ago
   }
-  const diffHours = Math.floor(diffMinutes / 60)
+  const diffHours = Math.floor(diffMinutes / 60);
   if (diffHours < 24) {
-    return `${diffHours} 小时前`
+    return `${diffHours} hours ago`; // Hours ago
   }
-  const diffDays = Math.floor(diffHours / 24)
+  const diffDays = Math.floor(diffHours / 24);
   if (diffDays < 10) {
-    return `${diffDays} 天前`
+    return `${diffDays} days ago`; // Days ago
   }
-  return null
+  return null; // Beyond the scope of 'days ago', might consider extending or handling differently
 }
 
 // 获取一个格式化的日期，格式为：2024 年 1 月 1 日 星期一
 export function getFormattedDate(date: Date) {
-  const year = date.getFullYear() % 100
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'][date.getDay()]
+  const year = date.getFullYear();
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+                      "July", "August", "September", "October", "November", "December"];
+  const month = monthNames[date.getMonth()];
+  const day = date.getDate();
+  const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const week = dayNames[date.getDay()];
 
-  return `${year} 年 ${month} 月 ${day} 日 ${week}`
+  return `${week}, ${month} ${day}, ${year}`;
 }
+
 
 // 获取两个日期的相差的天数
 export function getDiffInDays(startDate: Date, endDate = new Date()) {
