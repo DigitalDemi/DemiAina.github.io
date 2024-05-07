@@ -1,4 +1,4 @@
 ---
-title: 项目
-description: 这些是我创建或参与的项目，如果你感兴趣不妨去给个 Star。
+title: Projects
+description: These are projects I created or participated in. If you are interested, you may wish to give them a star.
 ---

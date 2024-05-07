@@ -88,7 +88,7 @@ function concat(str1: string, str2: string, sep = ' / ') {
       <hr />
     </MarkdownWrapper>
     <aside class="hidden lg:block sticky top-20">
-      <SectionBlock title="目录">
+      <SectionBlock title="Table of contents">
         <PostToc headings={headings} client:idle />
       </SectionBlock>
       <hr class="my-2 border-zinc-200 dark:border-zinc-700 max-w-[100px]" />
@@ -99,7 +99,7 @@ function concat(str1: string, str2: string, sep = ' / ') {
       {
         current.data.comments && (
           <div>
-            <Comment client:visible />
+            <!-- <Comment client:visible /> -->
           </div>
         )
       }

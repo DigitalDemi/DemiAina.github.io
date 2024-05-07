@@ -14,7 +14,7 @@ export function Comment() {
       login: 'force',
       imageUploader: false,
       locale: {
-        placeholder: '发条友善的评论吧（支持 Markdown 语法）…',
+        placeholder: 'Leave a friendly comment (Markdown syntax supported)…',
       },
       emoji: ['//unpkg.com/@waline/emojis@1.1.0/bilibili'],
     })

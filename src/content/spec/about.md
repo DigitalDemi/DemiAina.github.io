@@ -1,29 +1,32 @@
 ---
-title: 自述
-description: 这是一份站长的自述报告，请查收。
+title: Introduction
+description: Showcase of my projects and skills
 ---
 
-## 关于 Gyoza
+## About Demi
 
-Gyoza 是一个使用 Astro 和 React 开发的博客主题。Gyoza 借鉴了 [Shiro](https://github.com/innei/Shiro) 和一些网站的设计。
+### Introduction
+I'm Demi, a passionate and versatile developer engaged in a variety of programming projects ranging from web development to machine learning. My commitment to both learning and building is reflected through my active GitHub repositories.
 
-Gyoza 的核心理念是简洁，快速，可爱。
+### Programming Languages and Technologies
+- **Astro**: Used for developing my personal website.
+- **Python**: Extensively used in AI assignments, database management systems, and cloud applications.
+- **Java**: Applied in several university projects and software engineering applications.
+- **HTML,CSS & JaavaScript**: Employed in web development projects including interactive applications.
+- **C & C++**: Focused on game development and system programming.
+- **Prolog, Shell, Go, Rust**: Diverse applications in smaller projects and coursework.
 
-- 在 [Markdown 示例](/posts/markdown) 中展示了 Markdown 的渲染样式
-- 可以前往 [Gyoza 使用指南](/posts/guide) 了解 Gyoza 的使用方法
+### Projects Highlight
+- **[DemiAina.github.io](https://github.com/DigitalDemi/DemiAina.github.io)**: My personal portfolio website developed using Astro.
+- **[AI-Assignment](https://github.com/DigitalDemi/AI-Assignment)**: Jupyter Notebooks demonstrating machine learning algorithms.
+- **[Kokoro-Diary](https://github.com/DigitalDemi/Kokoro-Diary)**: A Java-based diary application.
+- **[Lib-system](https://github.com/DigitalDemi/Lib-system)**: A Java application for library management, illustrating software engineering principles.
+- **[LinuxTouch-Windows](https://github.com/DigitalDemi/LinuxTouch-Windows)**: A Rust application.
+- **[GithubWebScraper](https://github.com/DigitalDemi/GithubWebScraper)**: A Python script for web scraping.
 
-Gyoza 是开源的，如果你对这个项目感兴趣，欢迎前往 Gyoza 的 [Github 仓库](https://github.com/lxchapu/astro-gyoza) 来提 Issue 或者 PR。
+### Philosophy
+My core philosophy in development is centered on simplicity, functionality, and continuous learning. Each project I undertake is an opportunity to enhance my skills and contribute to the community.
 
-## 关于作者
+### Contributions
+I am always open to collaborate on projects and contribute to open source. Feel free to check out my [GitHub repositories](https://github.com/DigitalDemi) and connect with me for any interesting projects or ideas.
 
-我是 lxchapu，是一名前端开发者，喜欢各种有趣的东西。欢迎访问我的个人网站 [www.lxchapu.com](https://www.lxchapu.com)，了解关于我更多的信息。
-
-## 致谢
-
-感谢以下项目：
-
-- [Astro](https://astro.build/)
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Jotai](https://jotai.org/)

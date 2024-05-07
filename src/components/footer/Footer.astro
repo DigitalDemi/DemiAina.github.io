@@ -21,8 +21,8 @@ const wordCountStr = (wordCount / 1000).toFixed(1) + 'k'
     <div>
       Powered by
       <Link href="https://astro.build/">Astro</Link>
-      & Designed by
-      <Link href="https://github.com/lxchapu/astro-gyoza">Gyoza</Link>
+      & edited by
+      <Link href="https://github.com/DigitalDemi/">Demi</Link>
     </div>
     <div class="space-x-1">
       <span>&copy;{copyDate} <Link href="/">{author.name}</Link>.</span>
@@ -32,13 +32,13 @@ const wordCountStr = (wordCount / 1000).toFixed(1) + 'k'
       </Link>
       <Link href="/sitemap-index.xml">
         <i class="iconfont icon-map"></i>
-        <span>站点地图</span>
+        <span>Sitemap</span>
       </Link>
     </div>
     <div>
       <RunningDays client:only="react" />
       <span class="select-none opacity-50">|</span>
-      <span>共嘚嘚了 {wordCountStr} 字</span>
+      <span>A total of {wordCountStr} words</span>
     </div>
   </div>
   <div class="mt-4 flex justify-center">

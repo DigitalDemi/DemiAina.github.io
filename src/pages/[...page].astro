@@ -61,7 +61,7 @@ const getPageUrl = (page: number) => {
         }
       </SectionBlock>
       <aside class="md:sticky md:top-20 space-y-10">
-        <SectionBlock title="CLASSIFICATION">
+        <SectionBlock title="Category">
           <CategoryList categories={allCategories} />
         </SectionBlock>
         <SectionBlock title="POPULAR TAGS">
@@ -70,7 +70,7 @@ const getPageUrl = (page: number) => {
             allTags.length > hotTags.length && (
               <div class="mt-2 text-right">
                 <a class="text-sm text-base/60 hover:text-accent" href="/tags">
-                  更多标签 <i class="iconfont icon-arrow-right" />
+                  Tags <i class="iconfont icon-arrow-right" />
                 </a>
               </div>
             )
