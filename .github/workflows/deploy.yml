@@ -17,6 +17,9 @@ jobs:
       - name: Check out your repository using git
         uses: actions/checkout@v2
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Set up Node.js with pnpm
         uses: actions/setup-node@v2
         with:
