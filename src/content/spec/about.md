@@ -17,7 +17,7 @@ I'm Demi, a passionate and versatile developer engaged in a variety of programmi
 - **Prolog, Shell, Go, Rust**: Diverse applications in smaller projects and coursework.
 
 ### Projects Highlight
-- **[DemiAina.github.io](https://github.com/DigitalDemi/DemiAina.github.io)**: My personal portfolio website developed using Astro.
+- **[DigitalDemi.github.io](https://github.com/DigitalDemi/DigitalDemi.github.io)**: My personal portfolio website developed using Astro.
 - **[AI-Assignment](https://github.com/DigitalDemi/AI-Assignment)**: Jupyter Notebooks demonstrating machine learning algorithms.
 - **[Kokoro-Diary](https://github.com/DigitalDemi/Kokoro-Diary)**: A Java-based diary application.
 - **[Lib-system](https://github.com/DigitalDemi/Lib-system)**: A Java application for library management, illustrating software engineering principles.
