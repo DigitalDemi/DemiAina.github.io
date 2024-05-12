@@ -32,6 +32,6 @@ html {
   scroll-padding-top: 64px;
 }
 
-html.gray {
-  filter: grayscale(1);
-}
+/* html.gray { */
+/*   filter: grayscale(1); */
+/* } */
